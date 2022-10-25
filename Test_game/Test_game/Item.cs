@@ -22,6 +22,6 @@
         
         public virtual void Use()
         {
-            Console.WriteLine($" Предмет {Name} использован");
+            Console.WriteLine($"Предмет {Name} использован");
         }
     }

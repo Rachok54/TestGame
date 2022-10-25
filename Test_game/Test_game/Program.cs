@@ -6,3 +6,10 @@ monster.Attack(player);
 Console.WriteLine(player.HP);
 
 
+Item sword = new Item("sword");
+player.inventory.Add(sword);
+player.inventory.ShowInventory();
+player.inventory.Use(sword.Name);
+player.inventory.ShowInventory();
+
+

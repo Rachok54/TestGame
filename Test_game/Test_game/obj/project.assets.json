@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vsevolod\\Desktop\\Test_game\\Test_game\\Test_game.csproj",
+      "projectUniqueName": "C:\\Users\\Vsevolod\\Documents\\GitHub\\TestGame\\Test_game\\Test_game\\Test_game.csproj",
       "projectName": "Test_game",
-      "projectPath": "C:\\Users\\Vsevolod\\Desktop\\Test_game\\Test_game\\Test_game.csproj",
+      "projectPath": "C:\\Users\\Vsevolod\\Documents\\GitHub\\TestGame\\Test_game\\Test_game\\Test_game.csproj",
       "packagesPath": "C:\\Users\\Vsevolod\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vsevolod\\Desktop\\Test_game\\Test_game\\obj\\",
+      "outputPath": "C:\\Users\\Vsevolod\\Documents\\GitHub\\TestGame\\Test_game\\Test_game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vsevolod\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -4,6 +4,7 @@ internal class Player
     public string Name { get; set; } = "Minion";
     virtual public int HP { get; protected set; } = 100;
     private int atk = 10;
+    public Inventory inventory = new Inventory();
 
 
 

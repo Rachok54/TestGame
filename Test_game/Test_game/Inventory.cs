@@ -33,6 +33,7 @@
         Inv1[Inv1.Length - 1] = item;
 
         Inv = Inv1;
+        Console.WriteLine($"Предмет {item.Name} добавлен в инвентарь");
     }
 
 
@@ -54,7 +55,9 @@
 
             }
             Inv = Inv1;
+            Console.WriteLine($"Предмет {name} удален из инвентаря");
         }
+        
     }
 
 
@@ -66,6 +69,20 @@
             Inv[id].Use();
             Delete(name);
         }
+
+    }
+
+    public void ShowInventory()
+    {
+        if(Inv.Length == 0) { Console.WriteLine("Инвентарь пустой"); }
+        else
+        {
+            for (int i = 0; i < Inv.Length; ++i)
+            {
+                Console.WriteLine($"{i + 1}Слот:{Inv[i].Name}");
+            }
+        }
+        
 
     }
 }
