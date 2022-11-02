@@ -4,6 +4,10 @@
         virtual public int HP { get; protected set; } = 100;
         public int atk = 10;
         
+        public Minion(string name)
+    {
+        Name = name;
+    }
         public void Attack(Player person)
         {
         person.GetDamage(atk); 
@@ -14,4 +18,12 @@
             HP -= damage;
         }
 
-    }
+        public void Info()
+        {
+        Console.WriteLine($"Имя:{Name},ХП:{HP},Атака:{atk}");
+        }
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
+}

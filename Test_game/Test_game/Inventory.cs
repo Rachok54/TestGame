@@ -37,9 +37,9 @@
     }
 
 
-    public void Delete(string name)
+    public void Delete(int id)
     {
-        int id = FindByName(name);
+        id -= 1;
         if (id != -1)
         {
             Item[] Inv1 = new Item[Inv.Length - 1];
@@ -55,19 +55,19 @@
 
             }
             Inv = Inv1;
-            Console.WriteLine($"Предмет {name} удален из инвентаря");
+            Console.WriteLine($"Предмет удален из инвентаря");
         }
         
     }
 
 
-    public void Use(string name)
+    public void Use(int id)
     {
-        int id = FindByName(name);
-        if (id != -1)
+        int id1 = id-1;
+        if (id1 != -1)
         {
-            Inv[id].Use();
-            Delete(name);
+            Inv[id1].Use();
+            Delete(id);
         }
 
     }
@@ -79,10 +79,16 @@
         {
             for (int i = 0; i < Inv.Length; ++i)
             {
-                Console.WriteLine($"{i + 1}Слот:{Inv[i].Name}");
+                Console.Write($"{i + 1}Слот: ");
+                Inv[i].Inf();
             }
         }
         
 
+    }
+
+    public int InvSize()
+    {
+        return Inv.Length;
     }
 }
