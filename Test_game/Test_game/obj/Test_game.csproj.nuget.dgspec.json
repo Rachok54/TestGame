@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vsevolod\\Documents\\GitHub\\TestGame\\Test_game\\Test_game\\Test_game.csproj": {}
+    "D:\\proj\\TestGame\\Test_game\\Test_game\\Test_game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vsevolod\\Documents\\GitHub\\TestGame\\Test_game\\Test_game\\Test_game.csproj": {
+    "D:\\proj\\TestGame\\Test_game\\Test_game\\Test_game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vsevolod\\Documents\\GitHub\\TestGame\\Test_game\\Test_game\\Test_game.csproj",
+        "projectUniqueName": "D:\\proj\\TestGame\\Test_game\\Test_game\\Test_game.csproj",
         "projectName": "Test_game",
-        "projectPath": "C:\\Users\\Vsevolod\\Documents\\GitHub\\TestGame\\Test_game\\Test_game\\Test_game.csproj",
-        "packagesPath": "C:\\Users\\Vsevolod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vsevolod\\Documents\\GitHub\\TestGame\\Test_game\\Test_game\\obj\\",
+        "projectPath": "D:\\proj\\TestGame\\Test_game\\Test_game\\Test_game.csproj",
+        "packagesPath": "C:\\Users\\artur\\.nuget\\packages\\",
+        "outputPath": "D:\\proj\\TestGame\\Test_game\\Test_game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vsevolod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

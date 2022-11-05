@@ -66,6 +66,20 @@ void Battle(Minion monster, Player player)///метод, который имит
     }
 }
 
+void Escape(Minion monster, Player player)
+{
+    Console.WriteLine("Монстр даёт 2 пинка в догонку");
+    monster.Attack(player);
+    Console.WriteLine($"У вас:{Player.HP}, у монстра:{monster.HP}");
+    monster.Attack(player);
+    Console.WriteLine($"У вас:{Player.HP}, у монстра:{monster.HP}");
+    if (Player.HP <= 0 )
+    {
+        Console.WriteLine("вы бесславно пали убегая от опасности");
+        throw (new Exception("Вы проиграли"));
+    }
+}
+
 bool Interactive(Item? item,Minion? monster)///метод с помощью которого мы выбираем текущее действие
 {
     if (monster == null && item != null)
@@ -74,7 +88,7 @@ bool Interactive(Item? item,Minion? monster)///метод с помощью ко
     }
     else if (monster != null && item == null)
     {
-        Console.WriteLine("Выберите действие: 1.Идти 2.Атаковать 3.Показать инвентарь 4.Показать инфо о себе 5.Закончить игру");
+        Console.WriteLine("Выберите действие: 1.Бежать 2.Атаковать 3.Показать инвентарь 4.Показать инфо о себе 5.Закончить игру");
     }
     else
     {
@@ -96,6 +110,10 @@ bool Interactive(Item? item,Minion? monster)///метод с помощью ко
     {
         case 1:
             {
+                if (monster != null && item == null)
+                {
+                    Escape(monster, player);
+                }
                 return false;
             }
         case 2:
